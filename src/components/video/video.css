@@ -1,0 +1,52 @@
+.video{
+    width: 250px;
+    margin: 5px 0;
+    padding: 5px 0;
+    height: max-content;
+ 
+}
+.video:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.thumbnail {
+    width:250px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.thumbnail > img {
+    height: 150px;
+    width: inherit;
+    }
+.duration{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    margin: 5px;
+    font-size: small;
+    color: rgb(92, 92, 92);
+}
+.channel__footer{
+    display: flex;
+    justify-content: space-between;
+}
+.channelLogo{
+    width: 20%;
+}
+.channel__details{
+    width: 75%;
+    margin: 5px;
+    font-size: 15px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.channelName{
+    margin-bottom: 5px;
+}
+.channelName , .views , .date{
+    font-size: 13px;
+    margin: 2px 0;
+    color: grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:0px 0px 1px indigo ;
+}

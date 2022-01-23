@@ -1,0 +1,7 @@
+.Sidebar{
+    flex: 0.3;
+    width: 100%;
+    max-width:max-content;
+    padding: 20px;   
+
+}

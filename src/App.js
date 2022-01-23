@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Login from './pages/Login/Login'
+import {auth,provider} from './firebase/firebase';
+import { addUser } from './store/Actions';
+import {useDispatch,useSelector} from 'react-redux';
+import {store} from './index';
+import Landing from './pages/Landing/Landing';
+import { signInWithPopup} from 'firebase/auth'
+import Header from './components/header/header';
 
 function App() {
+  console.log(store.getState())
+  const user=useSelector(state=>state.user)
+const dispatch=useDispatch();
+const signin=()=>{
+signInWithPopup(auth,provider).then(res=>{
+  console.log(res);
+dispatch(addUser(res.user));
+  })
+}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     { !user ?<Login />:<> <Header/> <Landing/> </> }
+    
     </div>
   );
 }

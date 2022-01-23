@@ -1,0 +1,21 @@
+.Content{
+    width: 100%;
+    background-color: white;
+}
+.tags{
+    background-color: rgb(97, 97, 97);
+}
+.tags > .MuiButton-root{
+    padding: 5px;
+    background-color: rgb(148, 147, 147);
+    border-radius: 6px;
+    margin: 5px 8px;
+}
+.video__content{
+width: inherit;
+height: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ background-color: black;
+}

@@ -1,0 +1,30 @@
+.login{
+    background-color: blanchedalmond;
+    padding: 40px 10px;
+    border-radius: 3px;
+    width: max-content;
+    margin:  auto;
+    margin-top: 20%;
+}
+.login > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    margin-bottom: 0%;
+}
+.login > h1 > .MuiSvgIcon-root {
+font-size: 60px;
+color: red;
+
+}
+.login > p {
+    text-align: end;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+.login > Button {
+    margin: 10px 20px;
+}
